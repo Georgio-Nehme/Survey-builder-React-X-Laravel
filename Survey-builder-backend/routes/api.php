@@ -28,14 +28,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/register', [AuthController::class, 'register'])->name("register");
 Route::post('/login', [AuthController::class, 'login'])->name("login");
+Route::post('/submit_survey', [SurveyController::class, 'submitSurvey'])->name('submitSurvey');
 
-Route::group(['prefix' => 'user'], function(){
+Route::get('/all_surveys', [SurveyController::class, 'getAllSurveys'])->name('getAllSurveys');
+Route::get('/questions', [QuestionController::class, 'getQuestions'])->name('getQuestions');
 
-    Route::get('/all_surveys', [SurveyController::class, 'getAllSurveys'])->name('getAllSurveys');
-    Route::get('/questions', [QuestionController::class, 'getQuestions'])->name('getQuestions');
-    Route::post('/submit_survey', [SurveyController::class, 'submitSurvey'])->name('submitSurvey');
-    
-});
 
 Route::group(['prefix' => 'admin'], function(){
 

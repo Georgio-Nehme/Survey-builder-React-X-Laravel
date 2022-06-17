@@ -3,10 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Choice;
 
-class ChoiceController extends Controller
-{
-    public function addChoices() { 
-        echo "Hello,This is working";
-        }   
+class ChoiceController extends Controller{
+    public function addChoices(Request $request) {
+        $choice = new Choice;
+        $choice->choice = $request->choice;
+        $choice->question_id = $request->question_id;
+        $choice->save();
+
+        return response()->json([
+            "status" => "success",
+        ], 200);
+    }
 }
