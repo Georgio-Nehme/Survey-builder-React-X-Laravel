@@ -41,6 +41,6 @@ Route::group(['prefix' => 'admin'], function(){
     Route::post('/add_choices', [ChoiceController::class, 'addChoices'])->name('addChoices');
 
     Route::get('/all_surveys', [SurveyController::class, 'getAllSurveys'])->name('getAllSurveys');
-    Route::get('/show_results', [AnswerController::class, 'showResults'])->name('results');
+    Route::get('/show_answers', [AnswerController::class, 'showAnswers'])->name('results');
 
 });
