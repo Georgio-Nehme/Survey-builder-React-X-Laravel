@@ -9,14 +9,16 @@ use App\Models\Answer;
 use App\Models\Choice;
 
 
-class QuestionController extends Controller
-{
+class QuestionController extends Controller{
+
+
     public function getQuestions(){
+
         return response()->json([
             "status" => "Success",
             "question" => Question::all(),
         ], 200);
-    }
+}
 
 
     public function addQuestion(Request $request) {
