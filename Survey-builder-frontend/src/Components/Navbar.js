@@ -7,7 +7,7 @@ const Navbar = () => {
                 SurveyLaunch
             </h1>
             <div className="links">
-                <Link to="/">Login</Link>
+                <Link to="/Login">Login</Link>
             </div>
         </nav>
     );

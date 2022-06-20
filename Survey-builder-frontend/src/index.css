@@ -5,6 +5,18 @@ body{
 
 }
 
+.content{
+  width:80%;
+}
+
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .home{
   display: flex;
   flex-direction: column;
@@ -37,11 +49,12 @@ h1{
 }
 
 .links>a {
-  background-color: greenyellow;
+  background-color: green;
   border-radius: 3px;
   width:80px;
   height: 25px;
   text-decoration: none;
+  color:white;
 }
 
 .navbar>h1{
@@ -51,7 +64,7 @@ h1{
 }
 
 
-/* Home page Carroucells  styling*/
+/* Home page Carousels  styling*/
 
 .surveys_container{
   width:100%;
@@ -66,7 +79,7 @@ h1{
 }
 
 
-.survey_carroucell{
+.survey_carousel{
   width:150px;
   height:250px;
   background:coral;
@@ -80,7 +93,7 @@ h1{
   margin: 15px;
 }
 
-.survey_carroucell >.img_container > img{
+.survey_carousel >.img_container > img{
   border-radius: 10px;
 }
 
@@ -129,10 +142,104 @@ h1{
 
 .submit_button{
   width: 250px;
-  height: 100px;
+  height: 40px;
   background-color: rgb(43, 148, 43);
   border:none;
-  border-radius: 30px;
+  border-radius: 5px;
   font-size: 30px;
   color:white;
+}
+
+
+.create_survey{
+  display: flex;
+  gap:20px;
+  width:80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.create_survey >.survey_header{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  border:1px black solid;
+  width: 80%;
+  padding: 50PX;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.create_survey >.survey_header>.add_survey{
+  width: auto;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+
+} 
+
+.create_survey >.survey_header>.survey_title_input{
+  height: 40px;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 0 0 0 10px;
+}
+
+.create_survey >.survey_header>.survey_description_input{
+    border-radius: 5px;
+    height:20px;
+    padding: 0 0 0 10px;
+}
+
+
+
+.add_question{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  width:100%;
+  border:1px black solid;
+  padding: 50PX;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgba(255, 170, 170, 0.281);
+}
+
+.add_question>.add_button{
+  border:none;
+  border-radius: 5px; ;
+  background-color: green;
+  color:white;
+  height:60px;
+  width:120px;
+}
+
+
+.login{
+  display: flex;
+  flex-direction: column;
+  border:1px black solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  gap:15px;
+  padding:20px ;
+}
+
+.login>input{
+  width:80%;
+}
+
+.login>button{
+  width:40%;
+  background-color: green;
+  border:none;
+  height:30px;
+  border-radius:5px;
 }

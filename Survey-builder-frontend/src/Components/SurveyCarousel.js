@@ -1,12 +1,13 @@
 import Image from './Georgio.png'
 
-const SurveyCarroucell = () => {
+
+const SurveyCarousel = () => {
     return ( 
-        <div className="survey_carroucell">
+        <div className="survey_carousel">
             <div className="img_container">
                 <img src={Image} height={140} width={140}/>
             </div>
-            <div className='in_carroucell_text'>
+            <div className='in_carousel_text'>
                 <h4>Survey Title</h4>
                 <p>Survey Description</p>
             </div>
@@ -14,4 +15,4 @@ const SurveyCarroucell = () => {
      );
 }
  
-export default SurveyCarroucell;
+export default  SurveyCarousel ;

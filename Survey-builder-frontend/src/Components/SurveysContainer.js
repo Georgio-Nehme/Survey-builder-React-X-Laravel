@@ -1,10 +1,9 @@
-import SurveyCarroucell from "./SurveyCarroucell";
+import SurveyCarousel from "./SurveyCarousel";
 
 const SurveysContainer = () => {
     return ( 
         <div className="surveys_container">
-            <SurveyCarroucell/>
-
+            <SurveyCarousel/>
         </div>
      );
 }
